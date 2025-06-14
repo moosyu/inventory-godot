@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemBase" load_steps=3 format=3 uid="uid://b78ukwtqu01kf"]
+
+[ext_resource type="Texture2D" uid="uid://7n7voub6empn" path="res://Items/Materials/Dirt/dirt.png" id="1_sydbh"]
+[ext_resource type="Script" uid="uid://bp4aea1u5ghcr" path="res://Items/Scripts/item_base.gd" id="2_331mv"]
+
+[resource]
+script = ExtResource("2_331mv")
+item_id = "dirt"
+item_name = "Dirt"
+item_icon = ExtResource("1_sydbh")
+item_stack_size = 64
+item_sell_price = 1.0
+rarities = "common"
+item_type = "block"
+metadata/_custom_type_script = "uid://bp4aea1u5ghcr"

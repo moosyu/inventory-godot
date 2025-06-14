@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="SwordBase" load_steps=3 format=3 uid="uid://6xxq2cccxmha"]
+
+[ext_resource type="Texture2D" uid="uid://68m0ukkmkdv6" path="res://Items/Swords/WoodenSword/wood_sword.png" id="1_t7fd0"]
+[ext_resource type="Script" uid="uid://blp04m8rdbpiw" path="res://Items/Swords/Scripts/sword_base.gd" id="2_xb4u8"]
+
+[resource]
+script = ExtResource("2_xb4u8")
+item_id = "wood_sword"
+item_name = "Wooden Sword"
+item_icon = ExtResource("1_t7fd0")
+item_stack_size = 1
+item_sell_price = 10.0
+rarities = "common"
+item_type = "sword"
+metadata/_custom_type_script = "uid://blp04m8rdbpiw"

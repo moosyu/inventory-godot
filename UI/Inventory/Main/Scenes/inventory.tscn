@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://sweh524ya33e"]
+
+[ext_resource type="Script" uid="uid://b8tjb2txuciaj" path="res://UI/Inventory/Main/Scripts/inventory.gd" id="1_xy6fh"]
+
+[node name="Inventory" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_xy6fh")
+
+[node name="SlotContainer" type="GridContainer" parent="."]
+layout_mode = 0
+scale = Vector2(2, 2)
+columns = 9

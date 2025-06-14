@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=3 uid="uid://jsankgx0q2vf"]
+
+[ext_resource type="Script" uid="uid://cpc6wjnvnm2du" path="res://UI/Inventory/ItemSlot/Scripts/item_slot.gd" id="1_qvrum"]
+[ext_resource type="Texture2D" uid="uid://blt3obywey3eu" path="res://UI/Inventory/ItemSlot/Assets/slot.png" id="2_o7s7h"]
+[ext_resource type="FontFile" uid="uid://ivuwwdq2gcfa" path="res://Assets/Fonts/Mx437_IBM_EGA_8x14.ttf" id="3_yre3v"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hf2wc"]
+texture = ExtResource("2_o7s7h")
+
+[node name="ItemSlot" type="Panel"]
+custom_minimum_size = Vector2(64, 64)
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_hf2wc")
+script = ExtResource("1_qvrum")
+
+[node name="SlotItemTexture" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 25.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 2
+
+[node name="ItemCountLabel" type="Label" parent="."]
+visible = false
+layout_mode = 2
+offset_left = -9.0
+offset_top = 43.0
+offset_right = 55.0
+offset_bottom = 57.0
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_outline_size = 7
+theme_override_fonts/font = ExtResource("3_yre3v")
+theme_override_font_sizes/font_size = 16
+text = "64"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

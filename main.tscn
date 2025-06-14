@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://ci44d3bp3fmfi"]
+
+[ext_resource type="PackedScene" uid="uid://dwxl4xofaatbg" path="res://UI/Inventory/HandItem/Scenes/hand_item.tscn" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://sweh524ya33e" path="res://UI/Inventory/Main/Scenes/inventory.tscn" id="1_ig7tw"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Inventory" parent="." instance=ExtResource("1_ig7tw")]
+
+[node name="HandItem" parent="." instance=ExtResource("1_0xm2m")]
